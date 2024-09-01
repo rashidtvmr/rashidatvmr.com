@@ -44,7 +44,7 @@
     "@visx/group": "1.6.1",
     "@visx/heatmap": "^1.6.1",
     "@visx/responsive": "1.6.1",
-    "@visx/scale": "1.6.1",
+    "@visx/scale": "3.5.0",
     "@visx/shape": "1.6.1",
     "@visx/tooltip": "1.6.1",
     "chalk": "4.1.1",
