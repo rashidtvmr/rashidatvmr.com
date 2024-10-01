@@ -184,8 +184,8 @@ importers:
         specifier: ^4.6.7
         version: 4.6.9
       '@types/node':
-        specifier: 14.14.20
-        version: 14.14.20
+        specifier: 22.7.4
+        version: 22.7.4
       '@types/qs':
         specifier: 6.9.5
         version: 6.9.5
@@ -1225,8 +1225,8 @@ packages:
   '@types/ms@0.7.34':
     resolution: {integrity: sha512-nG96G3Wp6acyAgJqGasjODb+acrI7KltPiRxzHPXnP3NgI28bpQDRv53olbqGXbfcgF5aiiHmO3xpwEpS5Ld9g==}
 
-  '@types/node@14.14.20':
-    resolution: {integrity: sha512-Y93R97Ouif9JEOWPIUyU+eyIdyRqQR0I8Ez1dzku4hDx34NWh4HbtIc3WNzwB1Y9ULvNGeu5B8h8bVL5cAk4/A==}
+  '@types/node@22.7.4':
+    resolution: {integrity: sha512-y+NPi1rFzDs1NdQHHToqeiX2TIS79SWEAw9GYhkkx8bD0ChpfqC+n2j5OXOCpzfojBEBt6DnEnnG9MY0zk1XLg==}
 
   '@types/normalize-package-data@2.4.4':
     resolution: {integrity: sha512-37i+OaWTh9qeK4LSHPsyRC7NahnGotNuZvjLSgcPzblpHB3rrCJxAOgI5gCdKm7coonsaX1Of0ILiTcnZjbfxA==}
@@ -2644,9 +2644,11 @@ packages:
 
   glob@7.1.7:
     resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   glob@7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
 
   global-dirs@3.0.1:
     resolution: {integrity: sha512-NBcGGFbBA9s1VzD41QXDG+3++t9Mn5t1FpLdhESY6oKY4gYTFpX4wO3sqGUa0Srjtbfj3szX0RnemmrVRUdULA==}
@@ -2835,6 +2837,7 @@ packages:
 
   inflight@1.0.6:
     resolution: {integrity: sha512-k92I/b08q4wvFscXCLvqfsHCrjrF7yiXsQuIVvVE7N82W3+aqpzuUdBbfhWcy/FZR3/4IgflMgKLOsvPDrGCJA==}
+    deprecated: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
 
   inherits@2.0.4:
     resolution: {integrity: sha512-k/vGaX4/Yla3WzyMCvTQOXYeIHvqOKtnqBduzTHpzpQZzAskKMhZ2K+EnBiSM9zGSoIFeMpXKxa4dYeZIQqewQ==}
@@ -4224,6 +4227,7 @@ packages:
 
   rimraf@3.0.2:
     resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    deprecated: Rimraf versions prior to v4 are no longer supported
     hasBin: true
 
   rss@1.2.2:
@@ -4715,6 +4719,9 @@ packages:
 
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
+
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   unicode-trie@2.0.0:
     resolution: {integrity: sha512-x7bc76x0bm4prf1VLg79uhAzKw8DVboClSN5VxJuQ+LKDOVEW9CdH+VY7SP+vX7xCYQqzzgQpFqz15zeLvAtZQ==}
@@ -5462,7 +5469,7 @@ snapshots:
   '@jest/console@26.6.2':
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       chalk: 4.1.1
       jest-message-util: 26.6.2
       jest-util: 26.6.2
@@ -5475,7 +5482,7 @@ snapshots:
       '@jest/test-result': 26.6.2
       '@jest/transform': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       ansi-escapes: 4.3.2
       chalk: 4.1.1
       exit: 0.1.2
@@ -5509,14 +5516,14 @@ snapshots:
     dependencies:
       '@jest/fake-timers': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       jest-mock: 26.6.2
 
   '@jest/fake-timers@26.6.2':
     dependencies:
       '@jest/types': 26.6.2
       '@sinonjs/fake-timers': 6.0.1
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       jest-message-util: 26.6.2
       jest-mock: 26.6.2
       jest-util: 26.6.2
@@ -5583,11 +5590,7 @@ snapshots:
       jest-runner: 26.6.3
       jest-runtime: 26.6.3
     transitivePeerDependencies:
-      - bufferutil
-      - canvas
       - supports-color
-      - ts-node
-      - utf-8-validate
 
   '@jest/transform@26.6.2':
     dependencies:
@@ -5633,7 +5636,7 @@ snapshots:
     dependencies:
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       '@types/yargs': 15.0.19
       chalk: 4.1.1
 
@@ -5642,7 +5645,7 @@ snapshots:
       '@jest/schemas': 28.1.3
       '@types/istanbul-lib-coverage': 2.0.6
       '@types/istanbul-reports': 3.0.4
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       '@types/yargs': 17.0.32
       chalk: 4.1.1
 
@@ -6311,7 +6314,7 @@ snapshots:
 
   '@types/graceful-fs@4.1.9':
     dependencies:
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
 
   '@types/hast@2.3.9':
     dependencies:
@@ -6352,7 +6355,9 @@ snapshots:
 
   '@types/ms@0.7.34': {}
 
-  '@types/node@14.14.20': {}
+  '@types/node@22.7.4':
+    dependencies:
+      undici-types: 6.19.8
 
   '@types/normalize-package-data@2.4.4': {}
 
@@ -6402,7 +6407,7 @@ snapshots:
 
   '@types/yauzl@2.10.3':
     dependencies:
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
     optional: true
 
   '@typescript-eslint/eslint-plugin@5.62.0(@typescript-eslint/parser@5.62.0(eslint@7.29.0)(typescript@4.9.5))(eslint@7.29.0)(typescript@4.9.5)':
@@ -8693,7 +8698,7 @@ snapshots:
       '@jest/environment': 26.6.2
       '@jest/fake-timers': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       jest-mock: 26.6.2
       jest-util: 26.6.2
       jsdom: 16.7.0
@@ -8708,7 +8713,7 @@ snapshots:
       '@jest/environment': 26.6.2
       '@jest/fake-timers': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       jest-mock: 26.6.2
       jest-util: 26.6.2
 
@@ -8718,7 +8723,7 @@ snapshots:
     dependencies:
       '@jest/types': 26.6.2
       '@types/graceful-fs': 4.1.9
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -8738,7 +8743,7 @@ snapshots:
     dependencies:
       '@jest/types': 28.1.3
       '@types/graceful-fs': 4.1.9
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       anymatch: 3.1.3
       fb-watchman: 2.0.2
       graceful-fs: 4.2.11
@@ -8757,7 +8762,7 @@ snapshots:
       '@jest/source-map': 26.6.2
       '@jest/test-result': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       chalk: 4.1.1
       co: 4.6.0
       expect: 26.6.2
@@ -8804,7 +8809,7 @@ snapshots:
   jest-mock@26.6.2:
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
 
   jest-pnp-resolver@1.2.3(jest-resolve@26.6.2):
     optionalDependencies:
@@ -8839,7 +8844,7 @@ snapshots:
       '@jest/environment': 26.6.2
       '@jest/test-result': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       chalk: 4.1.1
       emittery: 0.7.2
       exit: 0.1.2
@@ -8900,7 +8905,7 @@ snapshots:
 
   jest-serializer@26.6.2:
     dependencies:
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       graceful-fs: 4.2.11
 
   jest-snapshot@26.6.2:
@@ -8927,7 +8932,7 @@ snapshots:
   jest-util@26.6.2:
     dependencies:
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       chalk: 4.1.1
       graceful-fs: 4.2.11
       is-ci: 2.0.0
@@ -8936,7 +8941,7 @@ snapshots:
   jest-util@28.1.3:
     dependencies:
       '@jest/types': 28.1.3
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       chalk: 4.1.1
       ci-info: 3.9.0
       graceful-fs: 4.2.11
@@ -8955,7 +8960,7 @@ snapshots:
     dependencies:
       '@jest/test-result': 26.6.2
       '@jest/types': 26.6.2
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       ansi-escapes: 4.3.2
       chalk: 4.1.1
       jest-util: 26.6.2
@@ -8963,13 +8968,13 @@ snapshots:
 
   jest-worker@26.6.2:
     dependencies:
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       merge-stream: 2.0.0
       supports-color: 7.2.0
 
   jest-worker@28.1.3:
     dependencies:
-      '@types/node': 14.14.20
+      '@types/node': 22.7.4
       merge-stream: 2.0.0
       supports-color: 8.1.1
 
@@ -10711,6 +10716,8 @@ snapshots:
       has-bigints: 1.0.2
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
+
+  undici-types@6.19.8: {}
 
   unicode-trie@2.0.0:
     dependencies:
